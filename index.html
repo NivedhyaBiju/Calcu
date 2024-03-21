@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+        <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+                <div class="display">
+                    <input id="result" type="text" class="form-control" readonly>
+                </div>
+                <div class="row1">
+                    <button onclick="allClear()" class="button operator">C</button>
+                    <button onclick="displayData('/')" class="button operator">/</button>
+                    <button onclick="displayData(x)" class="button operator">x</button>
+                    <button onclick="removeLastElement()" class="button operator">Del</button>
+                </div>
+                <div class="row2">
+                    <button onclick="displayData(7)" class="button">7</button>
+                    <button onclick="displayData(8)" class="button">8</button>
+                    <button onclick="displayData(9)" class="button">9</button>
+                    <button onclick="displayData('-')" class="button operator">-</button>
+                </div>
+                <div class="row3">
+                    <button onclick="displayData(4)" class="button">4</button>
+                    <button onclick="displayData(5)" class="button">5</button>
+                    <button onclick="displayData(6)" class="button">6</button>
+                    <button onclick="displayData('+')" class="button operator">+</button>
+                </div>
+                <div class="row4">
+                    <button onclick="displayData(1)" class="button">1</button>
+                    <button onclick="displayData(2)" class="button">2</button>
+                    <button onclick="displayData(3)" class="button">3</button>
+                    <button onclick="displayData('00')" class="button operator">00</button>
+                </div>
+                <div class="row5">
+                    <button onclick="displayData(0)" class="button">0</button>
+                    <button onclick="displayData('.')" class="button operator">.</button>
+                    <input onclick="findOut()" type="button" value="=" class="equal">
+                </div>
+        </div>
+    </div>
+</body>
+<script src="./calculator.js"></script>
+</html>
